@@ -1,8 +1,29 @@
-.inner-banner {
-  margin-top: 170px;
+@import "../../common/ui/assets/colors.scss";
 
-  h2 {
+.inner-banner {
+  margin-top: 150px;
+
+  .title {
     margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  .description {
+    margin-bottom: 30px;
+  }
+
+  .btn-seemore {
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: $white;
+    background-color: $btn-primary;
+    text-decoration: none;
+    transition: all ease 0.5s;
+
+    &:hover {
+      border-radius: 0px;
+    }
   }
 }
 
@@ -12,8 +33,97 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: -1;
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.main-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .left-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 55%;
+    background-color: $dark-yellow;
+    z-index: 0;
+    overflow: hidden;
+    transition: width ease 2s;
+
+    .box img {
+      width: 500px;
+      position: absolute;
+      transition: all ease 2s;
+      margin-right: -250px;
+      bottom: -72px;
+      right: -0px;
+    }
+
+    &:hover {
+      width: 65%;
+
+      .box img {
+        right: 30px;
+      }
+    }
+
+    &.blur {
+      width: 45%;
+
+      .box img {
+        margin-right: -300px;
+        right: 0px;
+      }
+    }
+  }
+
+  .right-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 45%;
+    background-color: $pale-grey;
+    z-index: 2;
+    overflow: hidden;
+    transition: width ease 2s;
+
+    .box img {
+      width: 500px;
+      position: absolute;
+      transition: all ease 2s;
+      margin-left: -250px;
+      bottom: -72px;
+      left: 0px;
+    }
+
+    &:hover {
+      width: 55%;
+
+      .box img {
+        left: 40px;
+      }
+    }
+
+    &.blur {
+      width: 35%;
+
+      .box img {
+        margin-left: -280px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+.right-wrapper.blur .main-wrapper,
+.left-wrapper.blur .main-wrapper {
+  position: relative;
+  overflow: hidden;
 }

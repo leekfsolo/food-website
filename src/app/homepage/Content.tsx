@@ -11,8 +11,10 @@ const Content = () => {
           <Row>
             <Col sm={4} className="ps-0">
               <div className={styles["inner-banner"]}>
-                <h2>The Finest Ingredients For Taste Batter</h2>
-                <p>
+                <h2 className={styles.title}>
+                  The Finest Ingredients For Taste Batter
+                </h2>
+                <p className={styles.description}>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Obcaecati, itaque non. Sapiente enim commodi nisi pariatur
                   voluptate, qui distinctio minus inventore ad hic ipsum
@@ -26,8 +28,10 @@ const Content = () => {
             <Col sm={4}></Col>
             <Col sm={4} className="text-end pe-0">
               <div className={styles["inner-banner"]}>
-                <h2>Modern Recipes Greatly Taste Food</h2>
-                <p>
+                <h2 className={styles.title}>
+                  Modern Recipes Greatly Taste Food
+                </h2>
+                <p className={styles.description}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Blanditiis aperiam ipsum harum sit quibusdam eos. Voluptatem
                   aliquid quidem sed, ex quam, facere illum quaerat dolores,

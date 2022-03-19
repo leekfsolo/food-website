@@ -60,7 +60,7 @@ const MainNavbar: FC<Props> = (props: Props) => {
     <Container>
       <Row>
         <Col md={10} className="offset-1">
-          <Navbar bg="white" expand="lg">
+          <Navbar bg="white" expand="lg" className={styles.nav}>
             <Navbar.Brand href="#home" className={styles.nav_brand}>
               <Image src={logo} className={styles.nav_logo} />
             </Navbar.Brand>
