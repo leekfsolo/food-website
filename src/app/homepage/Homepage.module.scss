@@ -1,0 +1,19 @@
+.inner-banner {
+  margin-top: 170px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.background {
+  background: url("../../common/ui/assets/ic/bg.png") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  transform: scale(1.1);
+}

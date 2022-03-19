@@ -25,6 +25,8 @@
     &.active {
       border-bottom: 0.2rem solid $text-primary;
       color: $text-primary;
+      position: relative;
+      top: -2px;
     }
   }
 }
