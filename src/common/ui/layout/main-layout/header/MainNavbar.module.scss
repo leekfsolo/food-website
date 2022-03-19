@@ -13,9 +13,19 @@
 
   a {
     text-transform: uppercase;
-    font-weight: 500;
-    margin-left: 15px;
+    text-decoration: none;
+    color: $text-disabled;
+    font-weight: 400;
     font-size: 16px;
+    margin-left: 15px;
+    padding: 8px;
+    transition: all ease-in-out 0.1s;
+
+    &:hover,
+    &.active {
+      border-bottom: 0.2rem solid $text-primary;
+      color: $text-primary;
+    }
   }
 }
 

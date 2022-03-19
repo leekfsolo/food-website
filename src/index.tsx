@@ -2,13 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import "./common/ui/assets/index.scss";
-import Header from "./common/ui/layout/main-layout/header";
+import AppRouter from "./routes/AppRouter";
 
 ReactDOM.render(
   <React.StrictMode>
-    <>
-      <Header />
-    </>
+    <AppRouter />
   </React.StrictMode>,
   document.getElementById("root")
 );
