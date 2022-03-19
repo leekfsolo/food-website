@@ -1,0 +1,34 @@
+@import "../../../assets/colors.scss";
+
+.nav_brand {
+  width: 200px;
+
+  .nav_logo {
+    width: 100%;
+  }
+}
+
+.nav_content_list {
+  margin-left: 30px;
+
+  a {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+}
+
+.nav_social_list {
+  a {
+    outline: none;
+    border: none;
+
+    i {
+      font-size: 20px;
+      padding: 9px;
+      background-color: white;
+      color: $text-primary;
+    }
+  }
+}

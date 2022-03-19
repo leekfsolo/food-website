@@ -1,30 +1,32 @@
 import React, { FC } from "react";
-import { Container, Image, Nav, Navbar } from "react-bootstrap";
+import { Col, Container, Image, Nav, Navbar, Row } from "react-bootstrap";
 import logo from "../../../assets/ic/logo.png";
+
+import styles from "./MainNavbar.module.scss";
 
 interface Props {}
 
 const MainNavbar: FC<Props> = (props: Props) => {
   return (
     <Container>
-      <div className="row">
-        <div className="col-md-12">
-          <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">
-              <Image src={logo} />
+      <Row>
+        <Col md={10} className="offset-1">
+          <Navbar bg="white" expand="lg">
+            <Navbar.Brand href="#home" className={styles.nav_brand}>
+              <Image src={logo} className={styles.nav_logo} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">About</Nav.Link>
-                <Nav.Link href="#link">Menu</Nav.Link>
-                <Nav.Link href="#link">Catering</Nav.Link>
-                <Nav.Link href="#link">Franchise</Nav.Link>
-                <Nav.Link href="#link">Locations</Nav.Link>
-                <Nav.Link href="#link">Faq</Nav.Link>
+              <Nav className={`${styles.nav_content_list} me-auto`}>
+                <Nav.Link href="#home">home</Nav.Link>
+                <Nav.Link href="#about">about</Nav.Link>
+                <Nav.Link href="#menu">menu</Nav.Link>
+                <Nav.Link href="#catering">catering</Nav.Link>
+                <Nav.Link href="#franchise">franchise</Nav.Link>
+                <Nav.Link href="#locations">locations</Nav.Link>
+                <Nav.Link href="#faq">faq</Nav.Link>
               </Nav>
-              <Nav>
+              <Nav className={styles.nav_social_list}>
                 <Nav.Link>
                   <i className="fa-brands fa-instagram"></i>
                 </Nav.Link>
@@ -34,8 +36,8 @@ const MainNavbar: FC<Props> = (props: Props) => {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </Container>
   );
 };
