@@ -2,6 +2,8 @@ import React, { FC, MutableRefObject } from "react";
 import { Image } from "react-bootstrap";
 import pizza from "../../common/ui/assets/ic/pizza.png";
 import pizzaRight from "../../common/ui/assets/ic/pizza-right.png";
+import Background from "./Background";
+
 import styles from "./Homepage.module.scss";
 
 interface Props {
@@ -28,6 +30,7 @@ const Wrapper: FC<Props> = (props: Props) => {
 
   return (
     <div className={styles["main-wrapper"]} onMouseLeave={() => resetWrapper()}>
+      <Background />
       <section
         className={styles["left-wrapper"]}
         onMouseEnter={(e) => wrapperHoverHandler(e.currentTarget.id)}

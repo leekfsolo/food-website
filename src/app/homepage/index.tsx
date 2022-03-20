@@ -1,6 +1,5 @@
 import React, { FC, useRef } from "react";
 import ContentLayout from "../../common/ui/layout/content-layout";
-import Background from "./Background";
 import Content from "./Content";
 import Wrapper from "./Wrapper";
 
@@ -10,7 +9,6 @@ const Homepage: FC = () => {
 
   return (
     <ContentLayout>
-      <Background />
       <Content />
       <Wrapper left={leftWrapperRef} right={rightWrapperRef} />
     </ContentLayout>

@@ -2,7 +2,7 @@
 
 .nav {
   .nav_brand {
-    width: 200px;
+    width: 180px;
 
     .nav_logo {
       width: 100%;
@@ -41,9 +41,9 @@
 
       i {
         font-size: 20px;
-        padding: 5px;
-        background-color: rgb(255, 255, 255);
+        padding: 7px;
         border-radius: 50%;
+        background-color: $white;
         color: $text-primary;
       }
     }
